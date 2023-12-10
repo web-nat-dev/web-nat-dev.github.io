@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Body Custom;
+    src: url('./assets/fonts/body.ttf');
+}
+
+#root {
+    height: 100vh;
+}
+
+body {
+    font-family: Body Custom;
+}
+
+.spin {
+    transition: all 1s ease;
+    animation: spinning 5000ms infinite linear;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
